@@ -12,7 +12,7 @@
   --indent-grid: 30px;
   --item: 4;
   --card-text: #eeeeee;
-  --icon: #AFB1B8;
+  --icon: #afb1b8;
 }
 
 body {
@@ -133,8 +133,14 @@ img {
 .nav-link,
 .nav-link-contact {
   display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+}
+
+.header-icon {
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Шапка */
@@ -280,10 +286,10 @@ img {
 /* Постоянные клиента */
 
 .client-list {
-    display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
 .client-logo {
@@ -310,12 +316,18 @@ img {
 /* Футер */
 .addres {
   font-style: normal;
+  margin-right: 70px;
 }
 
 .footer {
   background-color: var(--second-bg-cl);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-partfooter {
@@ -344,6 +356,14 @@ img {
   color: var(--second-text-cl);
 }
 
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--second-text-cl);
+  margin-bottom: 20px;
+}
 /* портфоліо */
 
 .filter-list {
@@ -372,10 +392,21 @@ img {
 .buttons:focus {
   color: var(--second-text-cl);
   background-color: var(--accent-text-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .project-card {
   --item: 3;
+}
+
+.project-card:focus,
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  background: var(--second-text-cl);
+  border: 1px solid var(--card-text);
 }
 
 .card-text {
@@ -428,4 +459,20 @@ img {
 
 .social-icon {
   fill: currentColor;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--second-text-cl);
+}
+
+.footer-social:hover,
+.footer-social:focus {
+  background-color: var(--accent-text-cl);
 }
