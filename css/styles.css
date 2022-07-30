@@ -116,8 +116,8 @@ img {
   gap: 50px;
 }
 
-.nav-contact:focus,
-.nav-contact:hover,
+.nav-link-contact:focus,
+.nav-link-contact:hover,
 .nav-link:focus,
 .nav-link:hover,
 .nav-link-current {
@@ -321,10 +321,7 @@ img {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.footer-part {
-  margin-right: 30px;;
+  gap: 70px;
 }
 
 .logo-partfooter {
@@ -406,8 +403,6 @@ img {
 .project-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-  background: var(--second-text-cl);
 }
 
 .card-text {
